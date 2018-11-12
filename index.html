@@ -305,49 +305,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        var dateElement = document.getElementById("example-date-input");
-        dateElement.value = new Date().toISOString().slice(0, 10);
-
-        var timeElement = document.getElementById("example-time-input");
-        timeElement.value = new Date().toISOString().slice(11, 19);
-
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 2000 } );
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-
-            $("#showLoginModal").click(function(){
-                $('#loginModal').modal('toggle');
-            });
-            $("#showReservationModal").click(function(){
-                $('#reservationModal').modal('toggle');
-            });
-            $("#closeLoginModal").click(function(){
-                $('#loginModal').modal('hide');
-            });
-            $("#cancelLoginModal").click(function(){
-                $('#loginModal').modal('hide');
-            });
-            $("#closeReservationModal").click(function(){
-                $('#reservationModal').modal('hide');
-            });
-            $("#cancelReservationModal").click(function(){
-                $('#reservationModal').modal('hide');
-            });
-
-        });
-
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
